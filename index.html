@@ -12,32 +12,69 @@
     }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background: linear-gradient(180deg, #FFD3B6, #FEFDA1);
       color: #212529;
     }
     .navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: #985463;
+      color: white;
+    }
+    .navbar .nav-link, .navbar-brand {
+      color: white !important;
+    }
+    .navbar .nav-link:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #F18E90;
+      color: white;
     }
     section {
       padding: 80px 0;
     }
+    h2 {
+      color: #985463;
+    }
     .badge {
       font-size: 1rem;
       margin: 0.25rem;
+      background-color: #ADC241;
+      color: white;
+    }
+    .card {
+      border: none;
+      background: #FFEFD3;
     }
     .card:hover {
       transform: translateY(-5px);
       transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(152, 84, 99, 0.2);
+    }
+    footer {
+      background-color: #985463;
+      color: white;
+      padding: 1rem 0;
+    }
+    .btn-primary {
+      background-color: #ADC241;
+      border-color: #ADC241;
+    }
+    .btn-primary:hover {
+      background-color: #8BAA2E;
+      border-color: #8BAA2E;
+    }
+    .form-control:focus {
+      border-color: #ADC241;
+      box-shadow: 0 0 0 0.2rem rgba(173, 194, 65, 0.25);
     }
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">Aditi Shinde</a>
       <div>
@@ -49,7 +86,7 @@
     </div>
   </nav>
 
-  <header class="text-center py-5 bg-light">
+  <header class="text-center py-5">
     <h1 class="display-4 animate__animated animate__fadeInDown">Hi, I'm Aditi</h1>
     <p class="lead animate__animated animate__fadeInUp">Aspiring Data Analyst | SQL | Python | Power BI</p>
     <a href="assets/Resume.pdf" class="btn btn-primary">Download Resume</a>
@@ -88,13 +125,13 @@
 
   <section id="skills" class="container animate__animated animate__fadeIn">
     <h2>Skills</h2>
-    <span class="badge bg-info text-dark">SQL</span>
-    <span class="badge bg-info text-dark">Python</span>
-    <span class="badge bg-info text-dark">Power BI</span>
-    <span class="badge bg-info text-dark">Excel</span>
-    <span class="badge bg-info text-dark">Pandas</span>
-    <span class="badge bg-info text-dark">Data Cleaning</span>
-    <span class="badge bg-info text-dark">Visualization</span>
+    <span class="badge">SQL</span>
+    <span class="badge">Python</span>
+    <span class="badge">Power BI</span>
+    <span class="badge">Excel</span>
+    <span class="badge">Pandas</span>
+    <span class="badge">Data Cleaning</span>
+    <span class="badge">Visualization</span>
   </section>
 
   <section id="contact" class="bg-white animate__animated animate__fadeIn">
@@ -114,6 +151,10 @@
       </form>
     </div>
   </section>
+
+  <footer class="text-center">
+    <p>&copy; 2025 Aditi Shinde. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
