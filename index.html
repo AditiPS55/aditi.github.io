@@ -1,67 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Aditi Shinde | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditi Shinde | Data Analyst</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 80px 0;
+    }
+    .badge {
+      font-size: 1rem;
+      margin: 0.25rem;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+    }
+  </style>
 </head>
-<body class="bg-light text-dark">
+<body>
 
-    <div class="container py-5 text-center">
-        <h1 class="display-4">Aditi Shinde</h1>
-        <p class="lead">Aspiring Data Analyst | SQL | Python | Power BI</p>
-        <a href="assets/Resume.pdf" class="btn btn-primary m-2">Download Resume</a>
-        <a href="mailto:aditips555@gmail.com" class="btn btn-success m-2">Email</a>
-        <a href="https://www.linkedin.com/in/aditishinde555" class="btn btn-outline-primary m-2">LinkedIn</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aditi Shinde</a>
+      <div>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <hr>
+  <header class="text-center py-5 bg-light">
+    <h1 class="display-4 animate__animated animate__fadeInDown">Hi, I'm Aditi</h1>
+    <p class="lead animate__animated animate__fadeInUp">Aspiring Data Analyst | SQL | Python | Power BI</p>
+    <a href="assets/Resume.pdf" class="btn btn-primary">Download Resume</a>
+  </header>
 
-    <div class="container py-4">
-        <h2>About Me</h2>
-        <p>Hello! I'm Aditi Shinde, an aspiring Data Analyst with a passion for transforming data into actionable insights.
-        I have experience working with tools like SQL, Python, Excel, and Power BI. I enjoy solving real-world problems and presenting data in a meaningful and visual way.</p>
-    </div>
+  <section id="about" class="container animate__animated animate__fadeIn">
+    <h2>About Me</h2>
+    <p>I’m a data enthusiast with a passion for transforming data into insightful stories. I specialize in SQL, Python, and data visualization tools to make analytics simple and actionable.</p>
+  </section>
 
-    <div class="container py-4">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Sales Dashboard:</strong> Built an interactive Power BI dashboard for regional sales analysis.</li>
-            <li><strong>Customer Churn Analysis:</strong> Used Python and logistic regression to identify at-risk customers.</li>
-            <li><strong>SQL Data Cleaning:</strong> Optimized and cleaned large datasets using SQL for reporting.</li>
-        </ul>
-    </div>
-
-    <div class="container py-4">
-        <h2>Skills</h2>
-        <div class="row">
-            <div class="col-md-3"><span class="badge bg-info text-dark">SQL</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Python</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Power BI</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Excel</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Pandas</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Data Visualization</span></div>
-            <div class="col-md-3"><span class="badge bg-info text-dark">Statistical Analysis</span></div>
+  <section id="projects" class="bg-white animate__animated animate__fadeIn">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-4 shadow-sm">
+            <h5>Sales Dashboard</h5>
+            <p>Created with Power BI to monitor performance across regions.</p>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-4 shadow-sm">
+            <h5>Customer Churn Model</h5>
+            <p>Predicted churn using Python and logistic regression.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-4 shadow-sm">
+            <h5>Data Cleaning SQL Scripts</h5>
+            <p>Cleaned raw datasets using advanced SQL techniques.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="container py-4">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mwkgrrrp" method="POST">
-            <div class="mb-3">
-                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
+  <section id="skills" class="container animate__animated animate__fadeIn">
+    <h2>Skills</h2>
+    <span class="badge bg-info text-dark">SQL</span>
+    <span class="badge bg-info text-dark">Python</span>
+    <span class="badge bg-info text-dark">Power BI</span>
+    <span class="badge bg-info text-dark">Excel</span>
+    <span class="badge bg-info text-dark">Pandas</span>
+    <span class="badge bg-info text-dark">Data Cleaning</span>
+    <span class="badge bg-info text-dark">Visualization</span>
+  </section>
+
+  <section id="contact" class="bg-white animate__animated animate__fadeIn">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mwkgrrrp" method="POST">
+        <div class="mb-3">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
     </div>
+  </section>
 
 </body>
 </html>
