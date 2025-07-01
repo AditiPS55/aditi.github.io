@@ -6,7 +6,7 @@
   <title>Aditi Shinde | Data Analyst</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Sugar+Magic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sugar+Magic&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -23,8 +23,21 @@
       background-color: #985463;
       color: white;
     }
-    .navbar .nav-link, .navbar-brand {
-      color: white !important;
+    .navbar-brand {
+      font-family: 'Sugar Magic', cursive;
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #FEFDA1 !important;
+    }
+    .navbar-nav {
+      margin-left: auto;
+    }
+    .navbar .nav-link {
+      color: #FEFDA1 !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .navbar .nav-link:hover {
       text-decoration: underline;
@@ -87,12 +100,6 @@
     .floating-btn:hover {
       background-color: #8BAA2E;
     }
-    .navbar-brand {
-      font-family: 'Sugar Magic', cursive;
-      font-weight: bold;
-      font-size: 1.8rem;
-      color: #FEFDA1 !important;
-    }
   </style>
 </head>
 <body>
@@ -100,11 +107,24 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">Aditi Shinde</a>
-      <div>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#contact">Contact</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -192,5 +212,6 @@
       loop: true
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
