@@ -4,77 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aditi Shinde - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Aditi Shinde - Data Analyst Portfolio with skills in SQL, Python, Power BI, Excel.">
+  <meta name="author" content="Aditi Shinde">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #FEFDA1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #fe5e41;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .header-section {
+      background: #ffd166;
+      color: #073b4c;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #073b4c;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: none;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #073b4c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Aditi Shinde</div>
-      <ul class="nav-links">
-        <li><a href="#about">👤 About</a></li>
-        <li><a href="#skills">💻 Skills</a></li>
-        <li><a href="#resume">📄 Resume</a></li>
-        <li><a href="#projects">📁 Projects</a></li>
-        <li><a href="#contact">✉️ Contact</a></li>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Aditi Shinde</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i class="fas fa-bars" style="color:#FEFDA1;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex flex-row list-unstyled">
+        <li class="nav-item me-3"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <a href="assets/aditi_shinde_resume.pdf" class="btn btn-primary" download>Download Resume</a>
-    </nav>
-  </header>
+    </div>
+  </div>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Aditi Shinde, a Data Analyst passionate about extracting insights from complex datasets and creating impactful dashboards.</p>
-  </section>
+<!-- Hero Section -->
+<header class="header-section">
+  <h1 class="display-4 fw-bold">Hi, I'm Aditi Shinde</h1>
+  <p class="lead" id="typed-text">Data Analyst | Python | SQL | Power BI | Excel</p>
+  <a href="assets/Aditi_Shinde_Resume.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
+</header>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>SQL</li>
-      <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-      <li>Excel (Advanced)</li>
-      <li>Power BI</li>
-      <li>Machine Learning (Basics)</li>
-      <li>EDA & Data Cleaning</li>
-    </ul>
-  </section>
+<!-- About Section -->
+<section id="about" class="container py-5">
+  <h2 class="section-title text-center">About Me</h2>
+  <p class="text-center">I'm a passionate Data Analyst with 1 year of experience. I specialize in turning raw data into actionable insights using SQL, Python, Excel, and Power BI. Let's turn data into decisions!</p>
+</section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Click the button below to download my resume:</p>
-    <a href="assets/aditi_shinde_resume.pdf" class="btn btn-primary" download>Download Resume</a>
-  </section>
+<!-- Skills Section -->
+<section id="skills" class="container py-5">
+  <h2 class="section-title text-center">Skills</h2>
+  <div class="row text-center">
+    <div class="col"><span class="badge bg-secondary p-2">SQL</span></div>
+    <div class="col"><span class="badge bg-secondary p-2">Python</span></div>
+    <div class="col"><span class="badge bg-secondary p-2">Power BI</span></div>
+    <div class="col"><span class="badge bg-secondary p-2">Excel</span></div>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Retail Sales Dashboard using Power BI</li>
-      <li>Customer Churn Prediction (Python & ML)</li>
-      <li>Exploratory Data Analysis on COVID-19 Dataset</li>
-    </ul>
-  </section>
+<!-- Resume Section -->
+<section id="resume" class="container py-5">
+  <h2 class="section-title text-center">Resume</h2>
+  <p class="text-center">Download my full resume below:</p>
+  <div class="text-center">
+    <a href="assets/Aditi_Shinde_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required />
+<!-- Projects Section -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title text-center">Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-3 animate__animated animate__fadeInUp">
+        <h5 class="card-title">Sales Dashboard</h5>
+        <p class="card-text">Created a Power BI dashboard analyzing sales trends and customer behavior.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 animate__animated animate__fadeInUp">
+        <h5 class="card-title">Churn Prediction</h5>
+        <p class="card-text">Used Python and logistic regression to predict customer churn with 87% accuracy.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 animate__animated animate__fadeInUp">
+        <h5 class="card-title">SQL Reporting</h5>
+        <p class="card-text">Generated business reports from large datasets using complex SQL queries.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required />
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2 class="section-title text-center">Contact</h2>
+  <form action="https://formspree.io/f/mgegjogq" method="POST" class="w-75 mx-auto">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" required/>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" required/>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea name="message" class="form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</section>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Your message" required></textarea>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Aditi Shinde. All rights reserved.</p>
+</footer>
 
-      <button type="submit" class="btn btn-primary">Send</button>
-    </form>
-  </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  const typed = new Typed('#typed-text', {
+    strings: ['Data Analyst', 'SQL Expert', 'Python Coder', 'Dashboard Creator'],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+</script>
 
-  <footer>
-    <p>&copy; 2025 Aditi Shinde. All rights reserved.</p>
-  </footer>
 </body>
 </html>
