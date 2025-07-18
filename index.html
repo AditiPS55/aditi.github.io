@@ -2,253 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditi Shinde | Data Analyst</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Aditi Shinde - Portfolio of a Data Analyst with expertise in SQL, Python, Power BI, and Excel.">
-  <meta name="author" content="Aditi Shinde">
-
-  <!-- Styles & Fonts -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Sugar+Magic&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #FFD3B6, #FEFDA1);
-      color: #212529;
-    }
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: #985463;
-    }
-    .navbar-brand {
-      font-family: 'Sugar Magic', cursive;
-      font-weight: bold;
-      font-size: 2.5rem;
-      color: #FEFDA1 !important;
-    }
-    .navbar-nav {
-      margin-left: auto;
-    }
-    .navbar .nav-link {
-      color: #FEFDA1 !important;
-      font-size: 1.3rem;
-      padding: 0 1rem;
-      letter-spacing: 1px;
-    }
-    .navbar .nav-link:hover {
-      text-decoration: underline;
-    }
-    header {
-      background-color: #F18E90;
-      color: white;
-    }
-    section {
-      padding: 80px 0;
-    }
-    h2 {
-      color: #985463;
-    }
-    .badge {
-      font-size: 1rem;
-      margin: 0.25rem;
-      background-color: #ADC241;
-      color: white;
-    }
-    .card {
-      border: none;
-      background: #FFEFD3;
-      transition: 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(152, 84, 99, 0.2);
-    }
-    footer {
-      background-color: #985463;
-      color: white;
-      padding: 1rem 0;
-    }
-    .btn-primary {
-      background-color: #ADC241;
-      border-color: #ADC241;
-    }
-    .btn-primary:hover {
-      background-color: #8BAA2E;
-      border-color: #8BAA2E;
-    }
-    .form-control:focus {
-      border-color: #ADC241;
-      box-shadow: 0 0 0 0.2rem rgba(173, 194, 65, 0.25);
-    }
-    .floating-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #ADC241;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-      transition: background 0.3s;
-    }
-    .floating-btn:hover {
-      background-color: #8BAA2E;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aditi Shinde - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Aditi Shinde</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span><i class="fas fa-bars" style="color: #FEFDA1; font-size: 1.5rem;"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex flex-row list-unstyled">
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#skills"><i class="fas fa-code"></i> Skills</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="text-center py-5">
-    <h1 class="display-4 animate__animated animate__fadeInDown">
-      Hi, I'm <span id="typed"></span>
-    </h1>
-    <p class="lead animate__animated animate__fadeInUp">Aspiring Data Analyst | SQL | Python | Power BI</p>
-    <a href="assets/Aditi_Shinde_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Aditi Shinde</div>
+      <ul class="nav-links">
+        <li><a href="#about">👤 About</a></li>
+        <li><a href="#skills">💻 Skills</a></li>
+        <li><a href="#resume">📄 Resume</a></li>
+        <li><a href="#projects">📁 Projects</a></li>
+        <li><a href="#contact">✉️ Contact</a></li>
+      </ul>
+      <a href="assets/aditi_shinde_resume.pdf" class="btn btn-primary" download>Download Resume</a>
+    </nav>
   </header>
 
-  <section id="about" class="container animate__animated animate__fadeIn">
+  <section id="about">
     <h2>About Me</h2>
-    <div style="font-size: 1.1rem; line-height: 1.8; color: #333;">
-      <p>I am a detail-oriented Data Analyst with over 1 year of experience, proficient in Power BI, Advanced Excel, SQL, and Python. I have successfully completed projects with companies like BCG, Accenture, Unified Mentor, and Unmessenger. These experiences have honed my abilities in financial data analysis, dashboard development, and data storytelling.</p>
-
-      <p><strong>Profile:</strong> Data Science & Business Analytics</p>
-      <p><strong>Education:</strong><br>Master of Computer Applications – 8.55 SGPA<br>B.Sc. Biotechnology: Bioinformatics – Grade A</p>
-      <p><strong>Languages:</strong> English, Hindi, French, Marathi</p>
-      <p><strong>BI Tools:</strong> Power BI</p>
-      <p><strong>Python Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn</p>
-      <p><strong>Spreadsheet Tools:</strong> Excel, Google Sheets</p>
-      <p><strong>Database:</strong> MySQL (Joins, Subqueries, CTEs, Views)</p>
-      <p><strong>Other Skills:</strong> Communication, Presentation</p>
-      <p><strong>Interests:</strong> Painting, Nature Journaling, Reading</p>
-    </div>
+    <p>Hello! I'm Aditi Shinde, a Data Analyst passionate about extracting insights from complex datasets and creating impactful dashboards.</p>
   </section>
 
-  <section id="resume" class="bg-white animate__animated animate__fadeIn">
-    <div class="container">
-      <h2>Resume</h2>
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <p>You can download my resume to explore my experience, skills, and project highlights.</p>
-        </div>
-        <div class="col-md-4 text-md-end text-center">
-          <a href="assets/Aditi_Shinde_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="bg-white animate__animated animate__fadeIn">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card p-3 mb-4 shadow-sm animate__animated animate__fadeInUp">
-            <h5>Sales Dashboard</h5>
-            <p>Created with Power BI to monitor performance across regions.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3 mb-4 shadow-sm animate__animated animate__fadeInUp">
-            <h5>Customer Churn Model</h5>
-            <p>Predicted churn using Python and logistic regression.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3 mb-4 shadow-sm animate__animated animate__fadeInUp">
-            <h5>Data Cleaning SQL Scripts</h5>
-            <p>Cleaned raw datasets using advanced SQL techniques.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="container animate__animated animate__fadeIn">
+  <section id="skills">
     <h2>Skills</h2>
-    <span class="badge">SQL</span>
-    <span class="badge">Python</span>
-    <span class="badge">Power BI</span>
-    <span class="badge">Excel</span>
-    <span class="badge">Pandas</span>
-    <span class="badge">Data Cleaning</span>
-    <span class="badge">Visualization</span>
+    <ul class="skills-list">
+      <li>SQL</li>
+      <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+      <li>Excel (Advanced)</li>
+      <li>Power BI</li>
+      <li>Machine Learning (Basics)</li>
+      <li>EDA & Data Cleaning</li>
+    </ul>
   </section>
 
-  <section id="contact" class="bg-white animate__animated animate__fadeIn">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/mwkgrrrp" method="POST">
-        <div class="mb-3">
-          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="mb-3">
-          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </div>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Click the button below to download my resume:</p>
+    <a href="assets/aditi_shinde_resume.pdf" class="btn btn-primary" download>Download Resume</a>
   </section>
 
-  <footer class="text-center">
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Retail Sales Dashboard using Power BI</li>
+      <li>Customer Churn Prediction (Python & ML)</li>
+      <li>Exploratory Data Analysis on COVID-19 Dataset</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: aditips555@gmail.com</p>
+    <p>Phone: +91 7276672114</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aditishinde555" target="_blank">linkedin.com/in/aditishinde555</a></p>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Aditi Shinde. All rights reserved.</p>
   </footer>
-
-  <a href="https://www.linkedin.com/in/aditishinde555" class="floating-btn" target="_blank">Let's Connect</a>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed("#typed", {
-      strings: ["Aditi", "a Data Analyst", "an SQL Enthusiast", "a Python Learner"],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
